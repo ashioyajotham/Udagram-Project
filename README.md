@@ -50,9 +50,9 @@ Add your own domain name and have it point to the running services (try adding a
 
 
 # Additions
-* Editing the build script to include 
+* Editing the build script to include:
 ```
-"start": "node ./www/server.js
+"start": "node ./www/server.js"
 ```
 * AWS Elastic Beanstalk automatically starts "app.js" or "index.js". Lack of them may lead to instance failure.
 
