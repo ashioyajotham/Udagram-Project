@@ -61,3 +61,25 @@ Add your own domain name and have it point to the running services (try adding a
 ```
 http://udagram-dev-dev.us-west-2.elasticbeanstalk.com/
 ```
+
+# Troubleshooting and errors
+## IAM 
+* Create a new user with admin privileges and manipulate the other users using `AWS CLI`
+
+
+## Build Scripts
+* For Windows users, run the script using `git bash` or change the "cp" command to "copy"
+
+## RDS
+* This project was built on older version of node and you can either update or regress specifically to `node 12`
+* For issues due to connecting to sequelize, put the sequelize in a try catch block like this
+
+```
+(async () => {
+  try {
+    await sequelize.addModels(V0MODELS);
+    await sequelize.sync();
+  } catch (error) {
+    console.log(error)
+  }
+```
