@@ -69,6 +69,7 @@ http://udagram-dev-dev.us-west-2.elasticbeanstalk.com/
 
 ## Build Scripts
 * For Windows users, run the script using `git bash` or change the "cp" command to "copy"
+* For the windows users also, replace '/' with "\\" in the build script otherwise it will raise a syntax error
 
 ## RDS
 * This project was built on older version of node and you can either update or regress specifically to `node 12`
