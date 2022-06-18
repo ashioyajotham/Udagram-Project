@@ -55,3 +55,9 @@ Add your own domain name and have it point to the running services (try adding a
 "start": "node ./www/server.js
 ```
 * AWS Elastic Beanstalk automatically starts "app.js" or "index.js". Lack of them may lead to instance failure.
+
+
+#### Endpoint
+```
+http://udagram-dev-dev.us-west-2.elasticbeanstalk.com/
+```
